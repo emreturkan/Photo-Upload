@@ -65,7 +65,7 @@ const App = () => {
           <button className='w-24 py-2 bg-blue-500/20 text-blue-100 rounded-md hover:bg-blue-100 hover:text-blue-900 font-semibold transition-all disabled:bg-gray-500/20 disabled:text-gray-600' type='submit' disabled={!file}>Ekle</button>
         </form>
       </div>
-      <div className='mt-16 flex gap-x-6 flex-wrap'>
+      <div className='mt-16 flex gap-x-6 flex-wrap justify-center items-center'>
        {data?.map((item)=>(
         <div className='card w-96 h-60 flex gap-y-3 flex-col my-20' key={item._id}>
           <img className='w-full h-full object-cover rounded shadow-md' src={item.image} alt={item.name} />
